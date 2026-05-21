@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>ch12-1-1使用inline方式在網頁中加入JavaScript</title>
+<meta charset="utf-8">
+<style type="text/css">
+	div {
+		width: 600px;
+	  	margin: 30px auto;
+  		border: 2px solid brown;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<p id="js1">按下按鈕1在此顯示學號、姓名、和時間</p>
+		<button type="button" onclick="document.getElementById('js1').innerHTML = '41318450 劉華健 </br> '+Date()">按鈕1</button>
+	</div>
+	<hr>
+	<div>
+	<img id="pic" src="welcome.jpg" width="100%">
+	<p id="js2">按下按鈕2或3顯示日出或日落圖片</p>
+		<button type="button" onclick="document.getElementById('pic').src='sunRise.jpg'">按鈕2:顯示日出</button>
+		<button type="button" onclick="document.getElementById('pic').src='sunSet.jpg'">按鈕3：顯示日落</button>
+	</div>
+</body>
+</html>
